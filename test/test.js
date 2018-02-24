@@ -12,8 +12,18 @@ describe('Analyser', () => {
   });
 
   describe('#getBitcoinPriceByDate()', () => {
-    it('should return the right price', async () => {
+    it('should return right price with string input', async () => {
       const price = await analyser.getBitcoinPriceByDate('2018-02-01');
+      assert.equal(price, '9083.258333333333');
+    });
+
+    it('should return right price with numbers input', async () => {
+      const price = await analyser.getBitcoinPriceByDate(2018, 2, 1);
+      assert.equal(price, '9083.258333333333');
+    });
+
+    it('should return right price with array input', async () => {
+      const price = await analyser.getBitcoinPriceByDate([2018, 2, 1]);
       assert.equal(price, '9083.258333333333');
     });
   });

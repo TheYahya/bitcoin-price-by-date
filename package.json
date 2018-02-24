@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-price-by-date",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get bitcoin price by date",
   "author": "Yahya SayadArbabi <yahya.arbabi@gmail.com>",
   "engines": {

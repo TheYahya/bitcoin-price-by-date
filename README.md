@@ -16,7 +16,7 @@ $ npm install bitcoin-price-by-date
 import { getBitcoinPriceByDate } from 'bitcoin-price-by-date';
 
 (async () => {
-  const price = await getBitcoinPriceByDate('2018-02-01');
+  const price = await getBitcoinPriceByDate([2018, 2, 1]);
   console.log(price); // return 9083.258333333333
 })();
 ```
